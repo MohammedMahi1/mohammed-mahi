@@ -1,8 +1,12 @@
 import React from 'react'
+import Container from '../components/ui/container'
+import Label from '../components/ui/label'
 
 const Me = () => {
   return (
-    <div>Me</div>
+    <div>
+        <Label>dfv</Label>
+    </div>
   )
 }
 

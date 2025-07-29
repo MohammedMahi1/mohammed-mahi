@@ -16,3 +16,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.container{
+  padding: 100px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  align-items: start;
+  gap: 100px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
