@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,4 +17,49 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.navbar a{
+  text-decoration: transparent;
+  color: inherit;
+  font-size: 20px;
+  transition: .3s;
+}
+.navbar a:hover{
+  text-decoration: underline;
+}
+.container{
+  padding: 50px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  align-items: start;
+  gap: 100px;
+}
+
+.label {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 760px){
+  .container{
+    padding: 40px;
+  }
+  .label{
+    font-size: 15px;
+  }
+  .navbar a{
+    font-size: 15px;
+  }
 }
