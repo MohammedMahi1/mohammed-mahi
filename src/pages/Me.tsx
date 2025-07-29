@@ -2,10 +2,7 @@ import {
   Github,
   Instagram,
   Linkedin,
-  LinkedinIcon,
-  LucideLinkedin,
-  Twitter,
-  X,
+   Twitter,
 } from "lucide-react";
 import Label from "../components/ui/label";
 
