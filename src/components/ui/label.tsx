@@ -5,7 +5,7 @@ type LabelProps = {
 
 const Label = ({children}:LabelProps) => {
   return (
-    <label>
+    <label className='label'>
         {children}
     </label>
   )
