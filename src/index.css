@@ -21,7 +21,7 @@
 .content{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 100px;
 }
 .navbar{
   display: flex;
@@ -49,9 +49,20 @@
 }
 
 .label {
-  font-size: 20px;
+  font-size: 25px;
 }
-
+.icon-group{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.icon{
+  background-color: #ffffff;
+  color: #101010;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 @media screen and (max-width: 760px){
   .container{
     padding: 40px;
