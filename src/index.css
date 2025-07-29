@@ -39,7 +39,7 @@
   text-decoration: underline;
 }
 .container{
-  padding: 100px 300px;
+  padding: 50px 300px;
   display: flex;
   flex-direction: column;
   justify-content: start;
