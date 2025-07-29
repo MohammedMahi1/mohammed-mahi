@@ -38,6 +38,26 @@
 .navbar a:hover{
   text-decoration: underline;
 }
+.btn{
+  outline: 2px solid #ffffff;
+  background: transparent;
+  padding: 7px 14px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  gap: 8px;
+  border-radius: 7px;
+  font-size: 20px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+.btn:hover{
+  background-color: #ffffff;
+  color: #101010;
+}
 .container{
   padding: 50px 300px;
   display: flex;

@@ -1,15 +1,11 @@
-import {
-  Github,
-  Instagram,
-  Linkedin,
-   Twitter,
-} from "lucide-react";
+import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import Label from "../components/ui/label";
+import Link from "../components/ui/link";
 
 const Me = () => {
   return (
     <div className="content">
-      <main style={{display:"flex",flexDirection:"column",gap:20}}>
+      <main style={{ display: "flex", flexDirection: "column", gap: 20 }}>
         <Label>
           Hello 👋
           <br />
@@ -24,10 +20,22 @@ const Me = () => {
         </Label>
       </main>
       <div className="icon-group">
-        <Github className="icon" size={20} />
-        <Twitter className="icon" size={20} />
-        <Instagram className="icon" size={20} />
-        <Linkedin className="icon" size={20} />
+
+        <Link path="https://github.com/MohammedMahi1">
+          <Github className="icon" size={20} />
+        </Link>
+
+
+        <Link path="https://www.linkedin.com/in/mohammed-mahi-96954828b/">
+          <Linkedin className="icon" size={20} />
+        </Link>
+        <Link path="https://twitter.com/MohammedMahi012">
+          <Twitter className="icon" size={20} />
+        </Link>
+
+        <Link path="https://www.instagram.com/_mahi_mohamed">
+          <Instagram className="icon" size={20} />
+        </Link>
       </div>
     </div>
   );
