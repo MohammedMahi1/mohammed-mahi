@@ -1,4 +1,3 @@
-import React from 'react'
 
 type NavbarItem = {
   label: string;

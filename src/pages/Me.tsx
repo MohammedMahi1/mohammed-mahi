@@ -1,5 +1,3 @@
-import React from "react";
-import Container from "../components/ui/container";
 import Label from "../components/ui/label";
 
 const Me = () => {
