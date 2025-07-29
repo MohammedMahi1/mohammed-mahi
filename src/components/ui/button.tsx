@@ -3,12 +3,11 @@ import  { type ReactNode } from 'react'
 
 type ButtonProps = {
     children:ReactNode;
-    onClick:()=>void
-} 
+} & React.ComponentProps<"button">
 
-const Button = ({children,onClick}:ButtonProps) => {
+const Button = ({children,...props}:ButtonProps) => {
   return (
-    <button className='btn' onClick={onClick}>
+    <button className='btn' {...props}>
         {children}
     </button>
   )
