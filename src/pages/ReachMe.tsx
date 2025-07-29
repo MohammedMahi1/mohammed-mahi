@@ -1,17 +1,8 @@
-import { Check, Copy } from "lucide-react";
-import Button from "../components/ui/button";
+import { AtSign } from "lucide-react";
 import Label from "../components/ui/label";
-import { useState } from "react";
+import { Link } from "react-router";
 
 const ReachMe = () => {
-    const [isCopied,setIsCopied] = useState(false)
-  const handleCopy = (event: any) => {
-    navigator.clipboard.writeText(event.target.innerText);
-    setIsCopied(true);
-    setTimeout(()=>{
-        setIsCopied(false)
-    },1000)
-  };
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
       <Label>📬 Reach Me</Label>
@@ -21,20 +12,14 @@ const ReachMe = () => {
         Feel free to reach out — I’d love to hear from you!
       </Label>
       <Label>👉 Click the button below to copy my email:</Label>
-      <Button
-        onClick={(e: any) => {
-          handleCopy(e);
-        }}
-      >
-        {
-            isCopied ?
-            
-            <Check/>
-            :
-            <Copy />
-        }
+      <Link to="mailto:mohammed.mahi012@gmail.com?body=My custom mail body">
+
+        
+            <AtSign/>
+        
         <span>mohammed.mahi012@gmail.com</span>
-      </Button>
+      </Link>
+      
     </div>
   );
 };
