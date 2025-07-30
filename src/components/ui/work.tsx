@@ -14,13 +14,17 @@ const Work = ({ github, vimeo, title, id,underline }: WorkProps) => {
     <div style={{display:"flex",flexDirection:"column"}}>
           <div key={id} className="work">
       <ArrowRight />
-      <Label style={{textWrap:"nowrap",width:"fit-content"}}>{title}</Label>
-      <Link path={github}>
+      <a href={github} className="link" target="_blank">
+      <Label style={{width:"fit-content",cursor:"pointer"}} className="hover-underline work-title">{title}</Label>
+      </a>
+      <div style={{display:"flex",flexDirection:"row",flexWrap:"wrap",gap:12}}>
+              <Link path={github}>
         <Github />
       </Link>
       <Link path={vimeo}>
       <Video />
       </Link>
+      </div>
     </div>
     {
       underline && 

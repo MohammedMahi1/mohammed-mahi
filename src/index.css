@@ -76,6 +76,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.hover-underline:hover{
+  text-decoration: underline;
+}
 .container{
   padding: 50px 300px;
   display: flex;
@@ -119,5 +122,8 @@
   .btn{
   font-size: 14px;
 
+  }
+  .work-title{
+    font-size: 15px;
   }
 }

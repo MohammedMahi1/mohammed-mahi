@@ -3,9 +3,9 @@ type LabelProps = {
     children?: React.ReactNode;
 } & React.ComponentProps<"label">
 
-const Label = ({children, ...props}:LabelProps) => {
+const Label = ({children,className, ...props}:LabelProps) => {
   return (
-    <label className='label' {...props}>
+    <label className={"label "+className} {...props}>
         {children}
     </label>
   )

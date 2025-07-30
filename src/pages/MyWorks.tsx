@@ -7,7 +7,7 @@ type Data = {
   const data:Data[]= [
   {
     id: 1,
-    title:"React Project & Laravel",
+    title:"Transport Job (React Ts & Laravel 12)",
     github:"https://github.com/MohammedMahi1/upwork_react_front_end",
     vimeo:"https://vimeo.com/1104929535",
     },
