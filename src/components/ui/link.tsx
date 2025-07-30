@@ -6,7 +6,7 @@ type LinkProps ={
 
 const Link = ({path,children}:LinkProps) => {
   return (
-    <a href={path} target='_blank'>
+    <a href={path} target='_blank' className='link'>
         {children}
     </a>
   )

@@ -1,27 +1,30 @@
 import Work, { type WorkProps } from "../components/ui/work";
 
-  const data:WorkProps[]= [
+
+type Data = {
+
+} & Omit<WorkProps,"underline">
+  const data:Data[]= [
   {
     id: 1,
     title:"React Project & Laravel",
-    discription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam praesentium assumenda nostrum molestiae maiores, mollitia ab, at suscipit tenetur totam in pariatur tempora vel, optio beatae. Aliquam in iusto commodi?",
-    path:"/",
-    thumbnail:"dfv"
+    github:"https://github.com/MohammedMahi1/upwork_react_front_end",
+    vimeo:"https://vimeo.com/1104929535",
     },
 ];
 
 const MyWorks = () => {
 
   return (
-    <div className="content">
+    <div className="content-work">
       {
       data.map((e) =>
           <Work
           id={e.id}
-          discription={e.discription}
+          github={e.github}
           title={e.title}
-          path={e.path}
-          thumbnail={e.thumbnail}
+          vimeo={e.vimeo}
+          underline={e.id < data.length ?true:false}
           />
         )
       }

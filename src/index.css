@@ -62,19 +62,19 @@
 .work{
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
+  flex-wrap: nowrap;
   justify-content: start;
   gap: 20px;
-}
-.skeleton{
-  background-color: #484747;
-  border-radius: 12px;
-  width: 600px;
-  height: 140px;
 }
 .img{
   width: 250px;
   object-fit: contain;
+}
+.content-work{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .container{
   padding: 50px 300px;
@@ -88,6 +88,10 @@
 
 .label {
   font-size: 25px;
+}
+.link{
+  text-decoration: none;
+  color: #ffffff;
 }
 .icon-group{
   display: flex;
